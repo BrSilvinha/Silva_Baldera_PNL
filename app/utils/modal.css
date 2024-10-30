@@ -1,0 +1,73 @@
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Mantiene el modal en su lugar */
+    z-index: 1; /* Sitúa el modal sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita el desplazamiento si es necesario */
+    background-color: rgb(0, 0, 0); /* Fondo negro */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con transparencia */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrando el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.close {
+    color: #aaa;
+    float: right; /* Coloca el botón de cierre a la derecha */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambia el color al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 0 0 20px; /* Margen inferior para el título */
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+label {
+    display: block; /* Para que cada etiqueta esté en su propia línea */
+    margin: 10px 0 5px; /* Espacio entre la etiqueta y el campo */
+    font-weight: bold; /* Etiquetas en negrita */
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
