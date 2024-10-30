@@ -1,0 +1,48 @@
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto; /* Centra el contenedor */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px; /* Espaciado inferior para separación */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el mouse */
+}
+
+button[type="button"] {
+    background-color: #e74c3c; /* Color diferente para el botón de cancelar */
+}
+
+button[type="button"]:hover {
+    background-color: #c0392b; /* Color de fondo al pasar el mouse para el botón de cancelar */
+}

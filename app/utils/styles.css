@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.btn-nueva-denuncia {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-nueva-denuncia:hover {
+    background-color: #2980b9;
+}
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+/* Estilos para botones de acciones */
+.actions button {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white; /* Color de texto de los botones */
+}
+
+/* Estilos específicos para botones de eliminar y editar */
+.btn-eliminar {
+    background-color: red; /* Fondo rojo */
+}
+
+.btn-editar {
+    background-color: rgb(216, 216, 55); /* Fondo amarillo */
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilos para el formulario en nueva_denuncia.php */
+.form-container {
+    margin-top: 20px; /* Margen superior para separación */
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los campos del formulario */
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el tamaño total */
+}
+
+.form-container button {
+    padding: 10px;
+    border: none;
+    background-color: #3498db; /* Color del botón */
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #2980b9; /* Color del botón al pasar el mouse */
+}
+
+/* Estilo para mensajes de error */
+.form-container .error {
+    color: red;
+    margin: 10px 0;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px; /* Espaciado entre la barra de búsqueda y el botón */
+}
+
+.search-button {
+    background-color: #3498db; /* Color de fondo */
+    color: white; /* Color del ícono */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    display: flex; /* Flexbox para centrar el ícono */
+    align-items: center; /* Centra el ícono verticalmente */
+    justify-content: center; /* Centra el ícono horizontalmente */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.search-button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el mouse */
+}
+
+.search-button i {
+    font-size: 16px; /* Tamaño del ícono */
+}
