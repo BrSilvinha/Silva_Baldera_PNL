@@ -1,9 +1,9 @@
 <?php
 class Database {
-    private $host = "localhost"; // Cambia si tu base de datos está en otro servidor
-    private $db_name = "denuncias_db"; // Asegúrate de que este nombre coincida con tu base de datos
-    private $username = "root"; // Nombre de usuario de la base de datos
-    private $password = ""; // Contraseña de la base de datos (asegúrate de que sea correcta)
+    private $host = "localhost";
+    private $db_name = "denuncias_db";
+    private $username = "root";
+    private $password = "";
     public $conn;
 
     // Método para obtener la conexión a la base de datos
@@ -22,4 +22,3 @@ class Database {
         return $this->conn;
     }
 }
-?>
